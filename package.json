@@ -8,20 +8,26 @@
     "lint:eslint": "eslint \"{src,mock}/**/*.{vue,ts,tsx,js,jsx}\" --fix",
     "lint:stylelint": "stylelint \"**/*.{vue,postcss,css,scss}\" --fix",
     "lint": "pnpm lint:eslint && pnpm lint:stylelint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "commit": "czg"
   },
   "dependencies": {
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "czg": "^1.7.1",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-define-config": "^1.24.1",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.3",
     "prettier": "^3.0.3",
     "stylelint": "^15.11.0",
     "stylelint-config-html": "^1.1.0",
