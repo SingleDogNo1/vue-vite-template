@@ -2,6 +2,7 @@
   "name": "vue-vite-template",
   "private": true,
   "version": "0.0.0",
+  "packageManager": "pnpm@8.6.7",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -13,7 +14,10 @@
     "commit": "czg"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "pinia": "^2.1.7",
+    "pinia-plugin-persist": "^1.0.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.8.0",
