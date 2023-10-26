@@ -2,8 +2,7 @@ import { defineStore } from 'pinia';
 import { store } from '@/store';
 import { UserState } from './types';
 
-export const useUserStore = defineStore({
-  id: 'app-user',
+export const useUserStore = defineStore('app-user', {
   state: (): UserState => ({
     name: '',
   }),
@@ -17,9 +16,7 @@ export const useUserStore = defineStore({
       this.name = name;
     },
   },
-  persist: {
-    enabled: true,
-  },
+  persist: true,
 });
 
 // Need to be used outside the setup
